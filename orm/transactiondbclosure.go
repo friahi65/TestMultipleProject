@@ -73,3 +73,9 @@ func main() {
 	DB.Create(&dat2)
 
 }
+func DeleteTable(DB *gorm.DB, table Gormd) error {
+	if err := DB.DropTableIfExists(table).Error; err != nil {
+		return err
+	}
+	return nil
+}

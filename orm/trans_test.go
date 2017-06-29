@@ -11,7 +11,7 @@ func TestCacheCreateAndSet(t *testing.T) {
 	DB, err := OpenTestConnection()
 	assert.Nil(err, "oh no")
 
-	err = DB.DropTable(&Gormd{}).Error
+	err = DeleteTable(DB, Gormd{})
 	assert.Nil(err, "o  no")
 	err = DB.CreateTable(&Gormd{}).Error
 	assert.Nil(err, "o  no")
