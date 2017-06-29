@@ -1,0 +1,9 @@
+[postgres]
+user = "postgres"
+password = "postgres"
+host = "localhost"
+dbname = "api_core"
+sslmode = "disable"
+[http]
+address = ""
+port = 8181
