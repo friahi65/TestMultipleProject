@@ -1,9 +1,0 @@
-# Go code vendor dependencies.
-#
-# package name will automatically be modified by the build process
-# to match that of the application.
-package: May-TEST-makefile
-
-
-import:
-    # add the application dependencies here
